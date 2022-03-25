@@ -15,7 +15,7 @@ const BandOffer = () => {
       <div className="home-content-container d-flex">
         <div className="card-item-default p-md-3 d-flex flex-column rounded">
           <div className="content-img-wrapper">
-            <Image src="/media/homepage/artist_2.png" className="card-img-top img-fluid" alt="..." />
+            <Image src="/media/homepage/artist_2.png" className="card-img-top img-fluid" alt="artist" />
             <div className="card-play-btn content-play-btn">
               <div className="play-btn-icon"></div>
             </div>
