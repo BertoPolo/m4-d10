@@ -1,7 +1,48 @@
 import { Navbar, Button, Form, Nav, NavDropdown, FormControl } from "react-bootstrap"
 const MyNavbar = () => {
   return (
-    <Navbar bg="dark" expand="lg">
+    <div id="top-nav" class="d-none d-sm-block" style="z-index: 100;">
+
+            <nav class="navbar px-3 d-flex justify-content-between w-100" style="position: absolute">
+                
+                  <ul class="nav">
+                    <li class="nav-item position-relative">
+                      <a class="nav-link position-relative" href="/album.html"><i class="bi bi-chevron-left"></i></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-center position-relative" href="/artist.html"><i class="bi bi-chevron-right" ></i></a>
+                    </li>
+                  </ul>
+
+                
+                  
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img src="/media/maneskin-cover.jpg" style="width: 20px">
+                                <span class="text-truncate">Spotify</span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                              <li><a class="dropdown-item" href="login.html">Account <span><i class="bi bi-box-arrow-up-right"></i></span></a></li>
+                              <li><a class="dropdown-item" href="#">Profile</a></li>
+                              <li><a class="dropdown-item" href="finish.html">Log-out</a></li>
+                              <li><a class="dropdown-item effect" type="button" href="#" data-bs-toggle="modal" data-bs-target="#albumModal">Song List</a></li>
+                              <li><a class="dropdown-item effect" type="button" href="#" onclick="countUnique()">Unique</a></li>
+                            </ul>
+        
+                        </div>
+            </nav>
+
+
+
+        </div>
+
+    
+  )
+}
+export default MyNavbar
+{/* 
+<Navbar bg="dark" expand="lg">
       <Navbar.Brand href="#home">Spotify</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
@@ -22,6 +63,5 @@ const MyNavbar = () => {
         </Form>
       </Navbar.Collapse>
     </Navbar>
-  )
-}
-export default MyNavbar
+
+*/}
