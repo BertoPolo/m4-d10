@@ -1,8 +1,8 @@
-import { useNavigate } from "react-router-dom"
+// import { useNavigate } from "react-router-dom"
 import { Image } from "react-bootstrap"
 
 const BandOffer = () => {
-  const navigate = useNavigate()
+  //   const navigate = useNavigate()
 
   return (
     <>

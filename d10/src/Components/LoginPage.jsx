@@ -1,10 +1,10 @@
-import { useState } from "react"
+// import { useState } from "react"
 import { Link, useNavigate } from "react-router-dom"
 import { Form, Button, Image, Navbar } from "react-bootstrap"
 
 const LoginPage = () => {
-  const [name, setName] = useState("")
-  const [password, setPassword] = useState(0)
+  // const [name, setName] = useState("")
+  // const [password, setPassword] = useState(0)
   const navigate = useNavigate()
 
   return (
@@ -40,19 +40,19 @@ const LoginPage = () => {
 
             <Form className="login-form">
               <div className="mb-3">
-                <Form.Group controlId="exampleInputEmail1">
+                <Form.Group id="exampleInputEmail1">
                   <Form.Control type="email" className="form-control" placeholder="Email address or username" />
                 </Form.Group>
               </div>
               <div className="mb-3">
-                <Form.Group controlId="exampleInputPassword1">
+                <Form.Group id="exampleInputPassword1">
                   <Form.Control className="form-control" type="password" id="exampleInputPassword1" placeholder="Password" />
                 </Form.Group>
               </div>
 
               <div className="mb-3 form-check d-flex justify-content-between">
                 <div>
-                  <Form.Group controlId="exampleInputPassword1">
+                  <Form.Group Id="exampleInputPassword1">
                     <Form.Control className="form-control" type="checkbox" id="exampleCheck1" />
                   </Form.Group>
 
