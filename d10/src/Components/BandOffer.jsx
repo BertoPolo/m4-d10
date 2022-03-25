@@ -11,7 +11,7 @@ const BandOffer = () => {
         <div className="seeall d-none d-sm-block">See All</div>
       </div>
 
-      {/* map since here */}
+      {/* map here */}
       <div className="home-content-container d-flex">
         <div className="card-item-default p-md-3 d-flex flex-column rounded">
           <div className="content-img-wrapper">
